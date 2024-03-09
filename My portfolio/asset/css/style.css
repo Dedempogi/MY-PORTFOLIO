@@ -10,6 +10,10 @@
 body {
     background: #081b29;
     color: #ededed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction:column;
 }
 
 .header {
@@ -152,3 +156,49 @@ body {
     overflow: hidden;
 
 }
+.icons {
+    width: 500px;
+    position: absolute;
+    top: 80%;
+    left: 10%;
+
+}
+
+.fbpic {
+    width: 50px;
+    height: auto;
+    margin-right: 5%;
+    transition: filter 0.3s ease; 
+}
+
+.fbpic:hover {
+    filter: grayscale(50%);
+}
+
+
+
+.gmailpic {
+    width: 50px;
+    height:auto;
+    margin-right: 5%;
+    transition: filter 0.3s ease; 
+}
+
+.gmailpic:hover {
+    filter: grayscale(50%)
+    
+    
+}
+
+.instagrampic {
+    width: 50px;
+    height:auto;
+    transition: filter 0.3s ease; 
+
+}
+
+.instagrampic:hover {
+    filter: grayscale(50%);
+}
+
+
