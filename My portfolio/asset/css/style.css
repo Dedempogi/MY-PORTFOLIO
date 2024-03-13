@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 *{
     margin: 0;
     padding:0;
@@ -33,24 +34,58 @@ body {
 
 .logo {
     font-size: 50px;
-    color: #ededed;
+    color: white; /* Set default color to white */
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 900;
+    position: relative;
+    background-color: #c2b3b3;
+    -webkit-background-clip: text; /* Clip the background to the text */
+    background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Hide the text color */
 }
+
+.logo:hover{
+    background: linear-gradient(to right, #a11717, #419ac7);
+
+}
+
+.logo:hover,
+.logo.active {
+    -webkit-text-fill-color: transparent; /* Keep the text color transparent */
+    background-size: 200% auto; /* Expand the gradient background */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    background-clip: text; /* Clip the background to the text */
+    animation: spread 0.5s infinite alternate; /* Apply animation on hover and loop infinitely */
+}
+
+@keyframes spread {
+    0% {
+        background-position: 0% center; /* Starting position */
+    }
+    100% {
+        background-position: 100% center; /* Ending position */
+    }
+}
+
+
+
 
 .navbar a {
     font-size: 18px;
-    color:#ededed;
+    color: #ededed;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 700;
     margin-left: 35px;
-    transition: .3s;
+    transition: color 0.3s, transform 0.3s; /* Add transform to the transition */
+    display: inline-block; /* Ensure inline-block to apply transforms */
 }
 
 .navbar a:hover,
 .navbar a.active {
     color: #00abf0;
+    transform: scale(1.5); /* Scale up by 5% on hover */
 }
+
 
 .home {
     height: 100vh; 
@@ -156,49 +191,26 @@ body {
     overflow: hidden;
 
 }
-.icons {
-    width: 500px;
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: 10%;
-
 }
 
-.fbpic {
-    width: 50px;
-    height: auto;
-    margin-right: 5%;
-    transition: filter 0.3s ease; 
-}
-
-.fbpic:hover {
-    filter: grayscale(50%);
-}
-
-
-
-.gmailpic {
-    width: 50px;
-    height:auto;
-    margin-right: 5%;
-    transition: filter 0.3s ease; 
-}
-
-.gmailpic:hover {
-    filter: grayscale(50%)
+.social-icons .icon {
+    margin-right: 10px;
+    font-size: 60px;
+    color: #f5f0f0; /* Adjust color as needed */
     
     
-}
-
-.instagrampic {
-    width: 50px;
-    height:auto;
-    transition: filter 0.3s ease; 
 
 }
 
-.instagrampic:hover {
-    filter: grayscale(50%);
+.social-icons .icon:hover {
+    color: #00abf0; /* Change color on hover */
 }
 
 
