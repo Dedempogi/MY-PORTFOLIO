@@ -64,30 +64,30 @@ font-weight:700;
 }
 
 .codinghtml {
-    gap:10%;
+    gap:5%;
     display: flex;
     justify-content: space-between;
 
 }
 
 .codingcss{
-    gap:10%;
+    gap:8%;
     display:flex;
     justify-content: space-between;
 }
 
 .codingjavascript{
-    gap:10%;
+    gap:8%;
     display:flex;
     justify-content: space-between;
 }
 .codingjava{
-    gap:10%;
+    gap:8%;
     display:flex;
     justify-content: space-between;
 }
 .codingc{
-    gap:10%;
+    gap:5%;
     display:flex;
     justify-content: space-between;
 }
